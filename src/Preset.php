@@ -40,35 +40,36 @@ class Preset extends LaravelPreset
         ]);
     }
 
+    // copy to base_path
     public static function updateMix()
     {
         File::copy(__DIR__.'/stubs/webpack.mix.js', base_path('webpack.mix.js'));
     }
+    public static function updateWebRoute()
+    {
+        File::copy(__DIR__.'/stubs/web.php', base_path('routes/web.php'));
+    }
 
+    // copy to app_path
+    public static function updateUserModel()
+    {
+        File::copy(__DIR__.'/stubs/User.php', app_path('User.php'));
+    }
+
+    // copy to resource_path
+    public static function updateCss()
+    {
+        File::copy(__DIR__.'/stubs/mycss.css', resource_path('css/mycss.css'));
+    }
     public static function updateScripts()
     {
         File::copy(__DIR__.'/stubs/app.js', resource_path('js/app.js'));
         File::copy(__DIR__.'/stubs/bootstrap.js', resource_path('js/bootstrap.js'));
     }
-
     public static function updateBladeFiles()
     {
         File::copy(__DIR__.'/stubs/home.blade.php', resource_path('views/home.blade.php'));
         File::copy(__DIR__.'/stubs/app.blade.php', resource_path('views/layouts/app.blade.php'));
     }
 
-    public static function updateCss()
-    {
-        File::copy(__DIR__.'/stubs/mycss.css', resource_path('css/mycss.css'));
-    }
-
-    public static function updateUserModel()
-    {
-        File::copy(__DIR__.'/stubs/User.php', app_path('User.php'));
-    }
-
-    public static function platzhalter()
-    {
-        //
-    }
 }

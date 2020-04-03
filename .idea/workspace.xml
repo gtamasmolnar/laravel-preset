@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e9fcfeb-8446-47b7-9856-861c86550ae0" name="Default Changelist" comment="" />
+    <list default="true" id="3e9fcfeb-8446-47b7-9856-861c86550ae0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Preset.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Preset.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1a0jxZilcZvK0rUHCY8PqBOZ3t2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -34,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585879653006</updated>
       <workItem from="1585879654834" duration="3938000" />
+      <workItem from="1585899471586" duration="513000" />
     </task>
     <servers />
   </component>
@@ -45,5 +55,9 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="930" y="180" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1080/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1585880392135" />
+    <state x="875" y="345" width="831" height="786" key="StructurePopup" timestamp="1585899719815">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="875" y="345" width="831" height="786" key="StructurePopup/-1920.0.1920.1080/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1585899719815" />
   </component>
 </project>
