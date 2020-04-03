@@ -18,6 +18,7 @@ class Preset extends LaravelPreset
         static::updateScripts();
         static::updateBladeFiles();
         static::updateCss();
+        static::updateUserModel();
     }
 
     public static function cleanSassDirectory()
@@ -59,6 +60,11 @@ class Preset extends LaravelPreset
     public static function updateCss()
     {
         File::copy(__DIR__.'/stubs/mycss.css', resource_path('css/mycss.css'));
+    }
+
+    public static function updateUserModel()
+    {
+        File::copy(__DIR__.'/stubs/User.php', app_path('User.php'));
     }
 
     public static function platzhalter()
