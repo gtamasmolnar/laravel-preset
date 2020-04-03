@@ -1,0 +1,17 @@
+{
+    "name": "tamas/preset",
+    "description": "Learning how to make a preset.",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Laracasts\\LaravelPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Laracasts\\LaravelPreset\\LaracastsServiceProvider"]
+        }
+    }
+}
