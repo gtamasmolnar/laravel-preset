@@ -2,6 +2,8 @@
 
 @section('content')
 
-    {{-- code --}}
+    <div class="card">
+        <p>torolve</p>
+    </div>
 
 @endsection

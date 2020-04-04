@@ -16,11 +16,11 @@ class Preset extends LaravelPreset
         static::updatePackages();
         static::updateMix();
         static::updateScripts();
-        static::updateBladeFiles();
+        static::updatePhpFiles();
         static::updateCss();
         static::updateUserModel();
         static::updateStubs();
-        static::updateWebRoute();
+        static::updateRoutes();
     }
 
     public static function cleanSassDirectory()
@@ -32,6 +32,7 @@ class Preset extends LaravelPreset
     {
         File::makeDirectory(resource_path('css'));
         File::makeDirectory(app_path('Services'));
+        File::makeDirectory(app_path('Console/Commands'));
         File::makeDirectory(resource_path('views/tag'));
         File::makeDirectory(resource_path('views/role'));
         File::makeDirectory(resource_path('views/user'));
@@ -50,9 +51,10 @@ class Preset extends LaravelPreset
     {
         File::copy(__DIR__.'/stubs/webpack.mix.js', base_path('webpack.mix.js'));
     }
-    public static function updateWebRoute()
+    public static function updateRoutes()
     {
         File::copy(__DIR__.'/stubs/web.php', base_path('routes/web.php'));
+        File::copy(__DIR__ . '/stubs/api_0.php', base_path('routes/api.php'));
     }
     public static function updateStubs()
     {
@@ -87,13 +89,14 @@ class Preset extends LaravelPreset
     }
     public static function updateScripts()
     {
-        File::copy(__DIR__.'/stubs/app.js', resource_path('js/app.js'));
+        File::copy(__DIR__.'/stubs/app_0.js', resource_path('js/app.js'));
         File::copy(__DIR__.'/stubs/bootstrap.js', resource_path('js/bootstrap.js'));
     }
-    public static function updateBladeFiles()
+    public static function updatePhpFiles()
     {
-        File::copy(__DIR__.'/stubs/home.blade.php', resource_path('views/home.blade.php'));
+        File::copy(__DIR__ . '/stubs/home_0.blade.php', resource_path('views/home.blade.php'));
         File::copy(__DIR__.'/stubs/app.blade.php', resource_path('views/layouts/app.blade.php'));
+        File::copy(__DIR__.'/stubs/secure.php', app_path('Console/Commands/secure.php'));
     }
 
 }
