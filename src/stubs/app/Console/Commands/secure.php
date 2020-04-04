@@ -38,10 +38,10 @@ class secure extends Command
      */
     public function handle()
     {
-        File::copy(base_path('vendor/tamas/preset/src/stubs/api.php'), base_path('routes/api.php'));
-        File::copy(base_path('vendor/tamas/preset/src/stubs/app.js'), resource_path('js/app.js'));
-        File::copy(base_path('vendor/tamas/preset/src/stubs/home.blade.php'), resource_path('views/home.blade.php'));
-        File::copy(base_path('vendor/tamas/preset/src/stubs/ExampleComponent.vue'), resource_path('js/components/ExampleComponent.vue'));
+        File::copy(base_path('vendor/tamas/preset/src/stubs/routes/api.php'), base_path('routes/api.php'));
+        File::copy(base_path('vendor/tamas/preset/src/stubs/resources/js/app.js'), resource_path('js/app.js'));
+        File::copy(base_path('vendor/tamas/preset/src/stubs/resources/views/home.blade.php'), resource_path('views/home.blade.php'));
+        File::copy(base_path('vendor/tamas/preset/src/stubs/resources/js/components/ExampleComponent.vue'), resource_path('js/components/ExampleComponent.vue'));
 
         $this->info('Api user info has been removed.');
     }

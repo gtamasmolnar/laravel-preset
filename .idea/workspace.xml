@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e9fcfeb-8446-47b7-9856-861c86550ae0" name="Default Changelist" comment="" />
+    <list default="true" id="3e9fcfeb-8446-47b7-9856-861c86550ae0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preset.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Preset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/ExampleComponent_0.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/js/components/ExampleComponent_0.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/api_0.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/routes/api_0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/app_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/js/app_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/home_0.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/views/home_0.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/css/mycss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/secure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/app/Console/Commands/secure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/resources/views/welcome.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,9 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/stubs/app/Http/Controllers" />
-      <recent name="$PROJECT_DIR$/src/stubs/models" />
-      <recent name="$PROJECT_DIR$/src/stubs/lara-stubs" />
+      <recent name="$PROJECT_DIR$/src/stubs/app/Console/Commands" />
+      <recent name="$PROJECT_DIR$/src/stubs/resources/layouts" />
+      <recent name="$PROJECT_DIR$/src/stubs/resources/js/components" />
+      <recent name="$PROJECT_DIR$/src/stubs/resources/css" />
+      <recent name="$PROJECT_DIR$/src/stubs/resources/views" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -56,7 +75,7 @@
       <updated>1585879653006</updated>
       <workItem from="1585879654834" duration="3938000" />
       <workItem from="1585899471586" duration="2916000" />
-      <workItem from="1585971277543" duration="10492000" />
+      <workItem from="1585971277543" duration="12248000" />
     </task>
     <servers />
   </component>

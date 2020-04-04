@@ -1,7 +1,7 @@
 try {
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap');
+    require('stubs/resources/js/bootstrap');
 } catch (e) {}
 
 window.axios = require('axios');
