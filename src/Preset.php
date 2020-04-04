@@ -89,7 +89,7 @@ class Preset extends LaravelPreset
     public static function updateControllers()
     {
         File::copy(__DIR__ . '/stubs/app/Http/Controllers/Md5Controller.php', app_path('Http/Controllers/Md5Controller.php'));
-        File::copy(__DIR__ . '/stubs/app/Http/Controllers/Auth/RegisterController', app_path('Http/Controllers/Auth/RegisterController.php'));
+        File::copy(__DIR__ . '/stubs/app/Http/Controllers/Auth/RegisterController.php', app_path('Http/Controllers/Auth/RegisterController.php'));
     }
 
 
