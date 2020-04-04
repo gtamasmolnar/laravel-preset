@@ -91,10 +91,10 @@ class Preset extends LaravelPreset
     }
     public static function updateSeeds()
     {
-        File::copy(__DIR__ . '/stubs/database/seeds/DatabaseSeeder.php', base_path('database/migrations/DatabaseSeeder.php'));
-        File::copy(__DIR__ . '/stubs/database/seeds/RoleSeeder.php', base_path('database/migrations/RoleSeeder.php'));
-        File::copy(__DIR__ . '/stubs/database/seeds/RoleUserSeeder.php', base_path('database/migrations/RoleUserSeeder.php'));
-        File::copy(__DIR__ . '/stubs/database/seeds/UserSeeder.php', base_path('database/migrations/UserSeeder.php'));
+        File::copy(__DIR__ . '/stubs/database/seeds/DatabaseSeeder.php', base_path('database/seeds/DatabaseSeeder.php'));
+        File::copy(__DIR__ . '/stubs/database/seeds/RoleSeeder.php', base_path('database/seeds/RoleSeeder.php'));
+        File::copy(__DIR__ . '/stubs/database/seeds/RoleUserSeeder.php', base_path('database/seeds/RoleUserSeeder.php'));
+        File::copy(__DIR__ . '/stubs/database/seeds/UserSeeder.php', base_path('database/seeds/UserSeeder.php'));
     }
     public static function updateCss()
     {
