@@ -25,7 +25,7 @@ class Preset extends LaravelPreset
 
     public static function cleanSassDirectory()
     {
-        File::cleanDirectory(resource_path('sass'));
+//        File::cleanDirectory(resource_path('sass'));
     }
 
     public static function createDirectories()
