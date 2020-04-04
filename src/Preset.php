@@ -24,6 +24,7 @@ class Preset extends LaravelPreset
         static::updateMigrations();
         static::updateControllers();
         static::updateCommands();
+        static::updateSeeds();
     }
     public static function cleanSassDirectory()
     {
