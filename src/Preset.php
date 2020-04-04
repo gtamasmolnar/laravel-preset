@@ -58,22 +58,22 @@ class Preset extends LaravelPreset
     }
     public static function updateStubs()
     {
-        File::copy(__DIR__.'/stubs/controller.api.stub', base_path('stubs/controller.api.stub'));
-        File::copy(__DIR__.'/stubs/controller.model.api.stub', base_path('stubs/controller.model.api.stub'));
-        File::copy(__DIR__.'/stubs/controller.model.stub', base_path('stubs/controller.model.stub'));
-        File::copy(__DIR__.'/stubs/controller.nested.api.stub', base_path('stubs/controller.nested.api.stub'));
-        File::copy(__DIR__.'/stubs/controller.nested.stub', base_path('stubs/controller.nested.stub'));
-        File::copy(__DIR__.'/stubs/controller.plain.stub', base_path('stubs/controller.plain.stub'));
-        File::copy(__DIR__.'/stubs/controller.stub', base_path('stubs/controller.stub'));
-        File::copy(__DIR__.'/stubs/factory.stub', base_path('stubs/factory.stub'));
-        File::copy(__DIR__.'/stubs/middleware.stub', base_path('stubs/middleware.stub'));
-        File::copy(__DIR__.'/stubs/migration.create.stub', base_path('stubs/migration.create.stub'));
-        File::copy(__DIR__.'/stubs/migration.stub', base_path('stubs/migration.stub'));
-        File::copy(__DIR__.'/stubs/migration.update.stub', base_path('stubs/migration.update.stub'));
-        File::copy(__DIR__.'/stubs/model.pivot.stub', base_path('stubs/model.pivot.stub'));
-        File::copy(__DIR__.'/stubs/model.stub', base_path('stubs/model.stub'));
-        File::copy(__DIR__.'/stubs/request.stub', base_path('stubs/request.stub'));
-        File::copy(__DIR__.'/stubs/seeder.stub', base_path('stubs/seeder.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/controller.api.stub', base_path('stubs/controller.api.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/controller.model.api.stub', base_path('stubs/controller.model.api.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/controller.model.stub', base_path('stubs/controller.model.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/controller.nested.api.stub', base_path('stubs/controller.nested.api.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/controller.nested.stub', base_path('stubs/controller.nested.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/controller.plain.stub', base_path('stubs/controller.plain.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/controller.stub', base_path('stubs/controller.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/factory.stub', base_path('stubs/factory.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/middleware.stub', base_path('stubs/middleware.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/migration.create.stub', base_path('stubs/migration.create.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/migration.stub', base_path('stubs/migration.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/migration.update.stub', base_path('stubs/migration.update.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/model.pivot.stub', base_path('stubs/model.pivot.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/model.stub', base_path('stubs/model.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/request.stub', base_path('stubs/request.stub'));
+        File::copy(__DIR__ . '/stubs/lara-stubs/seeder.stub', base_path('stubs/seeder.stub'));
     }
 
     // copy to app_path
