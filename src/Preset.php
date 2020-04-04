@@ -20,6 +20,7 @@ class Preset extends LaravelPreset
         static::updateCss();
         static::updateUserModel();
         static::updateStubs();
+        static::updateWebRoute();
     }
 
     public static function cleanSassDirectory()
@@ -31,6 +32,8 @@ class Preset extends LaravelPreset
     {
         File::makeDirectory(resource_path('css'));
         File::makeDirectory(app_path('Services'));
+        File::makeDirectory(resource_path('views/tag'));
+        File::makeDirectory(resource_path('views/role'));
     }
 
     public static function updatePackageArray($packages)
