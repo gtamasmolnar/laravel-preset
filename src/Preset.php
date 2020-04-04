@@ -21,6 +21,8 @@ class Preset extends LaravelPreset
         static::updateModels();
         static::updateStubs();
         static::updateRoutes();
+        static::updateMigrations();
+        static::updateControllers();
     }
 
     public static function cleanSassDirectory()
@@ -81,6 +83,20 @@ class Preset extends LaravelPreset
     {
         File::copy(__DIR__ . '/stubs/User.php', app_path('User.php'));
         File::copy(__DIR__ . '/stubs/models/Role.php', app_path('Role.php'));
+        File::copy(__DIR__ . '/stubs/models/RoleUser.php', app_path('RoleUser.php'));
+    }
+
+    public static function updateControllers()
+    {
+        File::copy(__DIR__ . '/stubs/app/Http/Controllers/Md5Controller.php', app_path('Http/Controllers/Md5Controller.php'));
+        File::copy(__DIR__ . '/stubs/app/Http/Controllers/Auth/RegisterController', app_path('Http/Controllers/Auth/RegisterController.php'));
+    }
+
+
+    public static function updateMigrations()
+    {
+        File::copy(__DIR__ . '/stubs/database/migrations/2014_10_12_000000_create_users_table.php',
+                    app_path('database/migrations/2014_10_12_000000_create_users_table.php'));
     }
 
     // copy to resource_path
@@ -100,12 +116,6 @@ class Preset extends LaravelPreset
         File::copy(__DIR__ . '/stubs/welcome.blade.php', resource_path('views/welcome.blade.php'));
         File::copy(__DIR__.'/stubs/app.blade.php', resource_path('views/layouts/app.blade.php'));
         File::copy(__DIR__.'/stubs/secure.php', app_path('Console/Commands/secure.php'));
-        File::copy(__DIR__.'/stubs/Md5Controller.php', app_path('Http/Controllers/Md5Controller.php'));
-    }
-
-    public static function updateRole()
-    {
-
     }
 
 }
