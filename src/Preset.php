@@ -96,6 +96,7 @@ class Preset extends LaravelPreset
     public static function updatePhpFiles()
     {
         File::copy(__DIR__ . '/stubs/home_0.blade.php', resource_path('views/home.blade.php'));
+        File::copy(__DIR__ . '/stubs/welcome.blade.php', resource_path('views/welcome.blade.php'));
         File::copy(__DIR__.'/stubs/app.blade.php', resource_path('views/layouts/app.blade.php'));
         File::copy(__DIR__.'/stubs/secure.php', app_path('Console/Commands/secure.php'));
         File::copy(__DIR__.'/stubs/Md5Controller.php', app_path('Http/Controllers/Md5Controller.php'));
