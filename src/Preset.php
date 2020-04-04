@@ -34,6 +34,7 @@ class Preset extends LaravelPreset
         File::makeDirectory(app_path('Services'));
         File::makeDirectory(resource_path('views/tag'));
         File::makeDirectory(resource_path('views/role'));
+        File::makeDirectory(resource_path('views/user'));
     }
 
     public static function updatePackageArray($packages)
