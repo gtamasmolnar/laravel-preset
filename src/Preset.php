@@ -91,6 +91,7 @@ class Preset extends LaravelPreset
     {
         File::copy(__DIR__.'/stubs/app_0.js', resource_path('js/app.js'));
         File::copy(__DIR__.'/stubs/bootstrap.js', resource_path('js/bootstrap.js'));
+        File::copy(__DIR__.'/stubs/ExampleComponent_0.vue', resource_path('js/components/ExampleComponent.vue'));
     }
     public static function updatePhpFiles()
     {

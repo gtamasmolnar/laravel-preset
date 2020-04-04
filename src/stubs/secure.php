@@ -37,9 +37,11 @@ class secure extends Command
      */
     public function handle()
     {
-        File::copy(__DIR__ . '/stubs/api.php', base_path('routes/api.php'));
+        File::copy(__DIR__ .'/stubs/api.php', base_path('routes/api.php'));
         File::copy(__DIR__.'/stubs/app.js', resource_path('js/app.js'));
         File::copy(__DIR__.'/stubs/home.blade.php', resource_path('views/home.blade.php'));
+        File::copy(__DIR__.'/stubs/ExampleComponent.vue', resource_path('js/components/ExampleComponent.vue'));
+
         $this->info('Api user info has been removed.');
     }
 }

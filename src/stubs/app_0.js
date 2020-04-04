@@ -4,7 +4,7 @@ window.Vue = require('vue');
 
 
 // Example Component
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('example-component', require('./components/ExampleComponent_0.vue').default);
 
 // Laravel Passport related components
 Vue.component('passport-clients', require('./components/passport/Clients.vue').default);
