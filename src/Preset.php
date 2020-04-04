@@ -81,7 +81,7 @@ class Preset extends LaravelPreset
     // copy to app_path
     public static function updateModels()
     {
-        File::copy(__DIR__ . '/stubs/User.php', app_path('User.php'));
+        File::copy(__DIR__ . '/stubs/models/User.php', app_path('User.php'));
         File::copy(__DIR__ . '/stubs/models/Role.php', app_path('Role.php'));
         File::copy(__DIR__ . '/stubs/models/RoleUser.php', app_path('RoleUser.php'));
     }
@@ -113,8 +113,8 @@ class Preset extends LaravelPreset
     {
         File::copy(__DIR__ . '/stubs/home_0.blade.php', resource_path('views/home.blade.php'));
         File::copy(__DIR__ . '/stubs/welcome.blade.php', resource_path('views/welcome.blade.php'));
-        File::copy(__DIR__.'/stubs/app.blade.php', resource_path('views/layouts/app.blade.php'));
-        File::copy(__DIR__.'/stubs/secure.php', app_path('Console/Commands/secure.php'));
+        File::copy(__DIR__ . '/stubs/app.blade.php', resource_path('views/layouts/app.blade.php'));
+        File::copy(__DIR__ . '/stubs/secure.php', app_path('Console/Commands/secure.php'));
     }
 
 }
