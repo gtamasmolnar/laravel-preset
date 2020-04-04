@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Support\Facades\File;
 use Illuminate\Console\Command;
 
-class secure extends Command
+class Secure extends Command
 {
     /**
      * The name and signature of the console command.

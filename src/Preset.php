@@ -102,6 +102,6 @@ class Preset extends LaravelPreset
         File::copy(__DIR__ . '/stubs/resources/views/_home.blade.php', resource_path('views/home.blade.php'));
         File::copy(__DIR__ . '/stubs/resources/views/welcome.blade.php', resource_path('views/welcome.blade.php'));
         File::copy(__DIR__ . '/stubs/resources/views/layouts/app.blade.php', resource_path('views/layouts/app.blade.php'));
-        File::copy(__DIR__ . '/stubs/secure.php', app_path('Console/Commands/secure.php'));
+        File::copy(__DIR__ . '/stubs/app/Console/Commands/Secure.php', app_path('Console/Commands/Secure.php'));
     }
 }
