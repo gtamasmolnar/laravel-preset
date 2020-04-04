@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e9fcfeb-8446-47b7-9856-861c86550ae0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Preset.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Preset.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +40,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/stubs/lara-stubs" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -51,7 +57,7 @@
       <updated>1585879653006</updated>
       <workItem from="1585879654834" duration="3938000" />
       <workItem from="1585899471586" duration="2916000" />
-      <workItem from="1585971277543" duration="5742000" />
+      <workItem from="1585971277543" duration="7228000" />
     </task>
     <servers />
   </component>

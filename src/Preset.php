@@ -18,7 +18,7 @@ class Preset extends LaravelPreset
         static::updateScripts();
         static::updatePhpFiles();
         static::updateCss();
-        static::updateUserModel();
+        static::updateModels();
         static::updateStubs();
         static::updateRoutes();
     }
@@ -77,9 +77,10 @@ class Preset extends LaravelPreset
     }
 
     // copy to app_path
-    public static function updateUserModel()
+    public static function updateModels()
     {
-        File::copy(__DIR__.'/stubs/User.php', app_path('User.php'));
+        File::copy(__DIR__ . '/stubs/User.php', app_path('User.php'));
+        File::copy(__DIR__ . '/stubs/models/Role.php', app_path('Role.php'));
     }
 
     // copy to resource_path
@@ -100,6 +101,11 @@ class Preset extends LaravelPreset
         File::copy(__DIR__.'/stubs/app.blade.php', resource_path('views/layouts/app.blade.php'));
         File::copy(__DIR__.'/stubs/secure.php', app_path('Console/Commands/secure.php'));
         File::copy(__DIR__.'/stubs/Md5Controller.php', app_path('Http/Controllers/Md5Controller.php'));
+    }
+
+    public static function updateRole()
+    {
+
     }
 
 }
