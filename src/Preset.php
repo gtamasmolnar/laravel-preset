@@ -16,13 +16,14 @@ class Preset extends LaravelPreset
         static::updatePackages();
         static::updateMix();
         static::updateScripts();
-        static::updatePhpFiles();
+        static::updateViews();
         static::updateCss();
         static::updateModels();
         static::updateStubs();
         static::updateRoutes();
         static::updateMigrations();
         static::updateControllers();
+        static::updateCommands();
     }
     public static function cleanSassDirectory()
     {
@@ -97,11 +98,14 @@ class Preset extends LaravelPreset
         File::copy(__DIR__ . '/stubs/resources/js/bootstrap.js', resource_path('js/bootstrap.js'));
         File::copy(__DIR__ . '/stubs/resources/js/components/_ExampleComponent.vue', resource_path('js/components/ExampleComponent.vue'));
     }
-    public static function updatePhpFiles()
+    public static function updateViews()
     {
         File::copy(__DIR__ . '/stubs/resources/views/_home.blade.php', resource_path('views/home.blade.php'));
         File::copy(__DIR__ . '/stubs/resources/views/welcome.blade.php', resource_path('views/welcome.blade.php'));
         File::copy(__DIR__ . '/stubs/resources/views/layouts/app.blade.php', resource_path('views/layouts/app.blade.php'));
+    }
+    public static function updateCommands()
+    {
         File::copy(__DIR__ . '/stubs/app/Console/Commands/Secure.php', app_path('Console/Commands/Secure.php'));
     }
 }
