@@ -104,6 +104,20 @@ class Preset extends LaravelPreset
     public static function updateMigrations()
     {
         File::copy(__DIR__ . '/stubs/database/migrations/2014_10_12_000000_create_users_table.php', base_path('database/migrations/2014_10_12_000000_create_users_table.php'));
+
+        File::copy(__DIR__ . '/stubs/database/migrations/2020_04_05_000101_create_infos_table.php', base_path('database/migrations/2020_04_05_000101_create_infos_table.php'));
+
+        File::copy(__DIR__ . '/stubs/database/migrations/2020_04_05_000102_create_deliveries_table.php', base_path('database/migrations/2020_04_05_000102_create_deliveries_table.php'));
+
+        File::copy(__DIR__ . '/stubs/database/migrations/2020_04_05_000201_create_roles_table.php', base_path('database/migrations/2020_04_05_000201_create_roles_table.php'));
+
+        File::copy(__DIR__ . '/stubs/database/migrations/2020_04_05_000202_create_role_user_table.php', base_path('database/migrations/2020_04_05_000202_create_role_user_table.php'));
+
+        File::copy(__DIR__ . '/stubs/database/migrations/2020_04_05_000203_create_settings_table.php', base_path('database/migrations/2020_04_05_000203_create_settings_table.php'));
+
+        File::copy(__DIR__ . '/stubs/database/migrations/2020_04_05_000204_create_tags_table.php', base_path('database/migrations/2020_04_05_000204_create_tags_table.php'));
+
+        File::copy(__DIR__ . '/stubs/database/migrations/2020_04_05_000205_create_tag_user_table.php', base_path('database/migrations/2020_04_05_000205_create_tag_user_table.php'));
     }
     public static function updateSeeds()
     {
