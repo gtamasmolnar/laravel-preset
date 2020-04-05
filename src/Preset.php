@@ -93,7 +93,8 @@ class Preset extends LaravelPreset
     }
     public static function updateMiddleware()
     {
-//        File::copy(__DIR__ . '/stubs/app/Http/Middleware/PLATZHALTER.php', app_path('Http/Middleware/PLATZHALTER.php'));
+        File::copy(__DIR__ . '/stubs/app/Http/Middleware/ActiveUser.php', app_path('Http/Middleware/ActiveUser.php'));
+        File::copy(__DIR__ . '/stubs/app/Http/Middleware/AdminOnly.php', app_path('Http/Middleware/AdminOnly.php'));
     }
     public static function updateComposers()
     {
