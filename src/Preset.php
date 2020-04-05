@@ -58,8 +58,8 @@ class Preset extends LaravelPreset
     public static function updatePackageArray($packages)
     {
         return Arr::except($packages, [
-            'popper.js',
-            'lodash',
+//            'popper.js',
+//            'lodash',
         ]);
     }
     public static function updateMix()
