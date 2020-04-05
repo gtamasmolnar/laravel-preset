@@ -14,17 +14,31 @@ class Preset extends LaravelPreset
         static::cleanSassDirectory();
         static::createDirectories();
         static::updatePackages();
+
         static::updateMix();
+
+        // app
+        static::updateConsoleCommands();
+        static::updateControllers();
+        static::updateMiddleware();
+        static::updateComposers();
+        static::updateModels();
+
+        // database
+        static::updateMigrations();
+        static::updateSeeds();
+
+        // resources
+        static::updateCss();
         static::updateScripts();
         static::updateViews();
-        static::updateCss();
-        static::updateModels();
-        static::updateStubs();
+
+        // routes
         static::updateRoutes();
-        static::updateMigrations();
-        static::updateControllers();
-        static::updateCommands();
-        static::updateSeeds();
+
+        // stubs
+        static::updateStubs();
+
     }
     public static function cleanSassDirectory()
     {
@@ -35,6 +49,7 @@ class Preset extends LaravelPreset
         File::makeDirectory(resource_path('css'));
         File::makeDirectory(app_path('Services'));
         File::makeDirectory(app_path('Console/Commands'));
+        File::makeDirectory(app_path('Http/View/Composers'));
         File::makeDirectory(resource_path('views/tag'));
         File::makeDirectory(resource_path('views/role'));
         File::makeDirectory(resource_path('views/user'));
@@ -49,6 +64,57 @@ class Preset extends LaravelPreset
     public static function updateMix()
     {
         File::copy(__DIR__.'/stubs/webpack.mix.js', base_path('webpack.mix.js'));
+    }
+    public static function updateCss()
+    {
+        File::copy(__DIR__ . '/stubs/resources/css/mycss.css', resource_path('css/mycss.css'));
+    }
+    public static function updateScripts()
+    {
+        File::copy(__DIR__ . '/stubs/resources/js/_app.js', resource_path('js/app.js'));
+        File::copy(__DIR__ . '/stubs/resources/js/bootstrap.js', resource_path('js/bootstrap.js'));
+        File::copy(__DIR__ . '/stubs/resources/js/components/_ExampleComponent.vue', resource_path('js/components/ExampleComponent.vue'));
+    }
+    public static function updateConsoleCommands()
+    {
+        File::copy(__DIR__ . '/stubs/app/Console/Commands/Secure.php', app_path('Console/Commands/Secure.php'));
+        File::copy(__DIR__ . '/stubs/app/Console/Commands/MakeViewScaffolding.php', app_path('Console/Commands/MakeViewScaffolding.php'));
+    }
+    public static function updateModels()
+    {
+        File::copy(__DIR__ . '/stubs/app/User.php', app_path('User.php'));
+        File::copy(__DIR__ . '/stubs/app/Role.php', app_path('Role.php'));
+        File::copy(__DIR__ . '/stubs/app/RoleUser.php', app_path('RoleUser.php'));
+    }
+    public static function updateControllers()
+    {
+        File::copy(__DIR__ . '/stubs/app/Http/Controllers/Md5Controller.php', app_path('Http/Controllers/Md5Controller.php'));
+        File::copy(__DIR__ . '/stubs/app/Http/Controllers/Auth/RegisterController.php', app_path('Http/Controllers/Auth/RegisterController.php'));
+    }
+    public static function updateMiddleware()
+    {
+//        File::copy(__DIR__ . '/stubs/app/Http/Middleware/PLATZHALTER.php', app_path('Http/Middleware/PLATZHALTER.php'));
+    }
+    public static function updateComposers()
+    {
+//        File::copy(__DIR__ . '/stubs/app/Http/View/Composers/TagsComposer.php', app_path('Http/View/Composers/TagsComposer.php'));
+    }
+    public static function updateMigrations()
+    {
+        File::copy(__DIR__ . '/stubs/database/migrations/2014_10_12_000000_create_users_table.php', base_path('database/migrations/2014_10_12_000000_create_users_table.php'));
+    }
+    public static function updateSeeds()
+    {
+        File::copy(__DIR__ . '/stubs/database/seeds/DatabaseSeeder.php', base_path('database/seeds/DatabaseSeeder.php'));
+        File::copy(__DIR__ . '/stubs/database/seeds/RoleSeeder.php', base_path('database/seeds/RoleSeeder.php'));
+        File::copy(__DIR__ . '/stubs/database/seeds/RoleUserSeeder.php', base_path('database/seeds/RoleUserSeeder.php'));
+        File::copy(__DIR__ . '/stubs/database/seeds/UserSeeder.php', base_path('database/seeds/UserSeeder.php'));
+    }
+    public static function updateViews()
+    {
+        File::copy(__DIR__ . '/stubs/resources/views/_home.blade.php', resource_path('views/home.blade.php'));
+        File::copy(__DIR__ . '/stubs/resources/views/welcome.blade.php', resource_path('views/welcome.blade.php'));
+        File::copy(__DIR__ . '/stubs/resources/views/layouts/app.blade.php', resource_path('views/layouts/app.blade.php'));
     }
     public static function updateRoutes()
     {
@@ -74,46 +140,5 @@ class Preset extends LaravelPreset
         File::copy(__DIR__ . '/stubs/stubs/request.stub', base_path('stubs/request.stub'));
         File::copy(__DIR__ . '/stubs/stubs/seeder.stub', base_path('stubs/seeder.stub'));
     }
-    public static function updateModels()
-    {
-        File::copy(__DIR__ . '/stubs/app/User.php', app_path('User.php'));
-        File::copy(__DIR__ . '/stubs/app/Role.php', app_path('Role.php'));
-        File::copy(__DIR__ . '/stubs/app/RoleUser.php', app_path('RoleUser.php'));
-    }
-    public static function updateControllers()
-    {
-        File::copy(__DIR__ . '/stubs/app/Http/Controllers/Md5Controller.php', app_path('Http/Controllers/Md5Controller.php'));
-        File::copy(__DIR__ . '/stubs/app/Http/Controllers/Auth/RegisterController.php', app_path('Http/Controllers/Auth/RegisterController.php'));
-    }
-    public static function updateMigrations()
-    {
-        File::copy(__DIR__ . '/stubs/database/migrations/2014_10_12_000000_create_users_table.php', base_path('database/migrations/2014_10_12_000000_create_users_table.php'));
-    }
-    public static function updateSeeds()
-    {
-        File::copy(__DIR__ . '/stubs/database/seeds/DatabaseSeeder.php', base_path('database/seeds/DatabaseSeeder.php'));
-        File::copy(__DIR__ . '/stubs/database/seeds/RoleSeeder.php', base_path('database/seeds/RoleSeeder.php'));
-        File::copy(__DIR__ . '/stubs/database/seeds/RoleUserSeeder.php', base_path('database/seeds/RoleUserSeeder.php'));
-        File::copy(__DIR__ . '/stubs/database/seeds/UserSeeder.php', base_path('database/seeds/UserSeeder.php'));
-    }
-    public static function updateCss()
-    {
-        File::copy(__DIR__ . '/stubs/resources/css/mycss.css', resource_path('css/mycss.css'));
-    }
-    public static function updateScripts()
-    {
-        File::copy(__DIR__ . '/stubs/resources/js/_app.js', resource_path('js/app.js'));
-        File::copy(__DIR__ . '/stubs/resources/js/bootstrap.js', resource_path('js/bootstrap.js'));
-        File::copy(__DIR__ . '/stubs/resources/js/components/_ExampleComponent.vue', resource_path('js/components/ExampleComponent.vue'));
-    }
-    public static function updateViews()
-    {
-        File::copy(__DIR__ . '/stubs/resources/views/_home.blade.php', resource_path('views/home.blade.php'));
-        File::copy(__DIR__ . '/stubs/resources/views/welcome.blade.php', resource_path('views/welcome.blade.php'));
-        File::copy(__DIR__ . '/stubs/resources/views/layouts/app.blade.php', resource_path('views/layouts/app.blade.php'));
-    }
-    public static function updateCommands()
-    {
-        File::copy(__DIR__ . '/stubs/app/Console/Commands/Secure.php', app_path('Console/Commands/Secure.php'));
-    }
+
 }
