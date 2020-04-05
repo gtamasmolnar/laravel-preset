@@ -11,8 +11,8 @@ class Preset extends LaravelPreset
 {
     public static function install()
     {
-        static::cleanSassDirectory();
         static::createDirectories();
+        static::cleanSassDirectory();
         static::updatePackages();
 
         static::updateMix();
@@ -49,6 +49,7 @@ class Preset extends LaravelPreset
         File::makeDirectory(resource_path('css'));
         File::makeDirectory(app_path('Services'));
         File::makeDirectory(app_path('Console/Commands'));
+        File::makeDirectory(app_path('Http/View'));
         File::makeDirectory(app_path('Http/View/Composers'));
         File::makeDirectory(resource_path('views/tag'));
         File::makeDirectory(resource_path('views/role'));
