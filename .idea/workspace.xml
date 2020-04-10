@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e9fcfeb-8446-47b7-9856-861c86550ae0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preset.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Preset.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,8 @@
       <workItem from="1585879654834" duration="3938000" />
       <workItem from="1585899471586" duration="2916000" />
       <workItem from="1585971277543" duration="18522000" />
-      <workItem from="1586061000464" duration="2454000" />
+      <workItem from="1586061000464" duration="3637000" />
+      <workItem from="1586482718510" duration="44000" />
     </task>
     <servers />
   </component>
@@ -81,10 +83,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1031" y="625" key="NewPhpFileDialog/-1920.0.1920.1080/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1585994339318" />
-    <state x="875" y="345" width="831" height="786" key="StructurePopup" timestamp="1586064490466">
+    <state x="875" y="345" width="831" height="786" key="StructurePopup" timestamp="1586482740593">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="875" y="345" width="831" height="786" key="StructurePopup/-1920.0.1920.1080/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1586064490466" />
+    <state x="875" y="345" width="831" height="786" key="StructurePopup/-1920.0.1920.1080/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1586482740593" />
     <state x="777" y="0" key="search.everywhere.popup" timestamp="1585901938757">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

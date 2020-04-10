@@ -125,6 +125,7 @@ class Preset extends LaravelPreset
         File::copy(__DIR__ . '/stubs/database/seeds/RoleSeeder.php', base_path('database/seeds/RoleSeeder.php'));
         File::copy(__DIR__ . '/stubs/database/seeds/RoleUserSeeder.php', base_path('database/seeds/RoleUserSeeder.php'));
         File::copy(__DIR__ . '/stubs/database/seeds/UserSeeder.php', base_path('database/seeds/UserSeeder.php'));
+        File::copy(__DIR__ . '/stubs/database/seeds/SettingSeeder.php', base_path('database/seeds/SettingSeeder.php'));
     }
     public static function updateViews()
     {
