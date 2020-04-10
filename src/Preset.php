@@ -3,8 +3,8 @@
 
 namespace Laracasts\LaravelPreset;
 
-use Illuminate\Support\Facades\File;
 use Laravel\Ui\Presets\Preset as LaravelPreset;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Arr;
 
 class Preset extends LaravelPreset
