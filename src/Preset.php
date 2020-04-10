@@ -69,6 +69,7 @@ class Preset extends LaravelPreset
     public static function updateCss()
     {
         File::copy(__DIR__ . '/stubs/resources/css/mycss.css', resource_path('css/mycss.css'));
+        File::copyDirectory(__DIR__ . '/stubs/public/open-iconic-master', public_path('open-iconic-master'));
     }
     public static function updateScripts()
     {
