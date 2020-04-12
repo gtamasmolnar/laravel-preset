@@ -55,13 +55,13 @@ class Preset extends LaravelPreset
         File::makeDirectory(resource_path('views/role'));
         File::makeDirectory(resource_path('views/user'));
     }
-    public static function updatePackageArray($packages)
-    {
-        return Arr::except($packages, [
-//            'popper.js',
-//            'lodash',
-        ]);
-    }
+//    public static function updatePackageArray($packages)
+//    {
+//        return Arr::except($packages, [
+////            'popper.js',
+////            'lodash',
+//        ]);
+//    }
     public static function updateMix()
     {
         File::copy(__DIR__.'/stubs/webpack.mix.js', base_path('webpack.mix.js'));
