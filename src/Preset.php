@@ -73,8 +73,8 @@ class Preset extends LaravelPreset
     }
     public static function updateScripts()
     {
-        File::copy(__DIR__ . '/stubs/resources/js/_app.js', resource_path('js/app.js'));
-        File::copy(__DIR__ . '/stubs/resources/js/bootstrap.js', resource_path('js/bootstrap.js'));
+//        File::copy(__DIR__ . '/stubs/resources/js/_app.js', resource_path('js/app.js'));
+//        File::copy(__DIR__ . '/stubs/resources/js/bootstrap.js', resource_path('js/bootstrap.js'));
         File::copy(__DIR__ . '/stubs/resources/js/components/_ExampleComponent.vue', resource_path('js/components/ExampleComponent.vue'));
     }
     public static function updateConsoleCommands()
@@ -92,6 +92,9 @@ class Preset extends LaravelPreset
     {
         File::copy(__DIR__ . '/stubs/app/Http/Controllers/Md5Controller.php', app_path('Http/Controllers/Md5Controller.php'));
         File::copy(__DIR__ . '/stubs/app/Http/Controllers/Auth/RegisterController.php', app_path('Http/Controllers/Auth/RegisterController.php'));
+        File::copy(__DIR__ . '/stubs/app/Http/Controllers/UserController.php', app_path('Http/Controllers/UserController.php'));
+        File::copy(__DIR__ . '/stubs/app/Http/Controllers/RoleController.php', app_path('Http/Controllers/RoleController.php'));
+        File::copy(__DIR__ . '/stubs/app/Http/Controllers/TagController.php', app_path('Http/Controllers/TagController.php'));
     }
     public static function updateMiddleware()
     {
