@@ -12,8 +12,8 @@ class Preset extends LaravelPreset
     public static function install()
     {
         static::createDirectories();
-        static::cleanSassDirectory();
-        static::updatePackages();
+//        static::cleanSassDirectory();
+//        static::updatePackages();
 
         static::updateMix();
 
@@ -42,8 +42,8 @@ class Preset extends LaravelPreset
     }
     public static function cleanSassDirectory()
     {
-//        File::cleanDirectory(resource_path('sass'));
-    }
+        File::cleanDirectory(resource_path('sass'));
+    } // don't call for the moment
     public static function createDirectories()
     {
         File::makeDirectory(resource_path('css'));
@@ -55,13 +55,13 @@ class Preset extends LaravelPreset
         File::makeDirectory(resource_path('views/role'));
         File::makeDirectory(resource_path('views/user'));
     }
-//    public static function updatePackageArray($packages)
-//    {
-//        return Arr::except($packages, [
-////            'popper.js',
-////            'lodash',
-//        ]);
-//    }
+    public static function updatePackageArray($packages)
+    {
+        return Arr::except($packages, [
+            'popper.js',
+            'lodash',
+        ]);
+    } // don't call for the moment
     public static function updateMix()
     {
         File::copy(__DIR__.'/stubs/webpack.mix.js', base_path('webpack.mix.js'));
