@@ -88,6 +88,7 @@ class Preset extends LaravelPreset
         File::copy(__DIR__ . '/stubs/app/Role.php', app_path('Role.php'));
         File::copy(__DIR__ . '/stubs/app/RoleUser.php', app_path('RoleUser.php'));
         File::copy(__DIR__ . '/stubs/app/Setting.php', app_path('Setting.php'));
+        File::copy(__DIR__ . '/stubs/app/Tag.php', app_path('Tag.php'));
     }
     public static function updateControllers()
     {
